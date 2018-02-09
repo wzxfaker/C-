@@ -19,7 +19,7 @@
 void selectSort(int arr[10]) {
     for (int i = 0 ; i < 10; i++) {//比较趟数
         for (int j = i + 1;j < 10 ; j++) {
-            if (arr[i] > arr[j]) {
+            if (arr[i] > arr[j]) {//每次都拿第一个与后边的进行比较，每次都把最小的放在最前边
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;

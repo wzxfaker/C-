@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846B75FF1F55573600F47CE8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 846B75FE1F55573600F47CE8 /* main.c */; };
 		848D13381F468FE7009C65BE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 848D13371F468FE7009C65BE /* main.c */; };
 		848D13451F46901F009C65BE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 848D13441F46901F009C65BE /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		846B75FA1F55573600F47CE8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		848D13321F468FE7009C65BE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		846B75FC1F55573600F47CE8 /* RotateArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RotateArray; sourceTree = BUILT_PRODUCTS_DIR; };
+		846B75FE1F55573600F47CE8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		848D13341F468FE7009C65BE /* 算法题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "算法题"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D13371F468FE7009C65BE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		848D13421F46901F009C65BE /* UpStairs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UpStairs; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		846B75F91F55573600F47CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		848D13311F468FE7009C65BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +76,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846B75FD1F55573600F47CE8 /* RotateArray */ = {
+			isa = PBXGroup;
+			children = (
+				846B75FE1F55573600F47CE8 /* main.c */,
+			);
+			path = RotateArray;
+			sourceTree = "<group>";
+		};
 		848D132B1F468FE7009C65BE = {
 			isa = PBXGroup;
 			children = (
 				848D13361F468FE7009C65BE /* 算法题 */,
 				848D13431F46901F009C65BE /* UpStairs */,
+				846B75FD1F55573600F47CE8 /* RotateArray */,
 				848D13351F468FE7009C65BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +99,7 @@
 			children = (
 				848D13341F468FE7009C65BE /* 算法题 */,
 				848D13421F46901F009C65BE /* UpStairs */,
+				846B75FC1F55573600F47CE8 /* RotateArray */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +123,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		846B75FB1F55573600F47CE8 /* RotateArray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846B76021F55573600F47CE8 /* Build configuration list for PBXNativeTarget "RotateArray" */;
+			buildPhases = (
+				846B75F81F55573600F47CE8 /* Sources */,
+				846B75F91F55573600F47CE8 /* Frameworks */,
+				846B75FA1F55573600F47CE8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotateArray;
+			productName = RotateArray;
+			productReference = 846B75FC1F55573600F47CE8 /* RotateArray */;
+			productType = "com.apple.product-type.tool";
+		};
 		848D13331F468FE7009C65BE /* 算法题 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848D133B1F468FE8009C65BE /* Build configuration list for PBXNativeTarget "算法题" */;
@@ -137,6 +183,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = gcg;
 				TargetAttributes = {
+					846B75FB1F55573600F47CE8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					848D13331F468FE7009C65BE = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -161,11 +211,20 @@
 			targets = (
 				848D13331F468FE7009C65BE /* 算法题 */,
 				848D13411F46901F009C65BE /* UpStairs */,
+				846B75FB1F55573600F47CE8 /* RotateArray */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		846B75F81F55573600F47CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846B75FF1F55573600F47CE8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		848D13301F468FE7009C65BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +244,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		846B76001F55573600F47CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		846B76011F55573600F47CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		848D13391F468FE8009C65BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +376,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		846B76021F55573600F47CE8 /* Build configuration list for PBXNativeTarget "RotateArray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846B76001F55573600F47CE8 /* Debug */,
+				846B76011F55573600F47CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		848D132F1F468FE7009C65BE /* Build configuration list for PBXProject "算法题" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -319,6 +400,7 @@
 				848D133D1F468FE8009C65BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		848D13461F46901F009C65BE /* Build configuration list for PBXNativeTarget "UpStairs" */ = {
 			isa = XCConfigurationList;
@@ -327,6 +409,7 @@
 				848D13481F46901F009C65BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
